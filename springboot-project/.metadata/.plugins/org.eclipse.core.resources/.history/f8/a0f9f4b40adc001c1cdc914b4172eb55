@@ -1,0 +1,30 @@
+package co.vinod.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import co.vinod.model.Customer;
+
+@RestController
+public class CustomerController {
+	
+	List<Customer> customers = new ArrayList<Customer>();
+	
+	public List<Customer> getAll(){
+		
+	}
+
+	@GetMapping("/api/customers/info")
+	public String info() {
+		return "This is a simple REST endpoint\n"
+				+ "exposing customer details at \n"
+				+ "http://localhost:1234/api/customers\n"
+				+ "\n"
+				+ "This current response came from \n"
+				+ "http://localhost:1234/api/customers/info";
+	}
+	
+}

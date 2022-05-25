@@ -1,0 +1,5 @@
+package co.vinod.model;
+
+public class CustomerList {
+
+}

@@ -1,0 +1,125 @@
+GET /api/contacts HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: application/json
+
+###
+
+GET /api/contacts HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+
+###
+
+GET /api/contacts HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: text/plain
+
+###
+GET /api/contacts/0d3c8259-0c90-4331-a049-a468a0b723d7 HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: application/json
+
+###
+
+GET /api/contacts/0d3c8259-0c90-4331-a049-a468a0b723d7 HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+
+###
+
+GET /api/contacts/0d3c8259-0c90-4331-a049-a468a0b723d7 HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: text/plain
+
+###
+# Watch the line gap between http request headers and http request body
+POST /api/contacts HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: text/plain,application/xhtml,application/jjson,*/*
+Content-Type: application/json
+
+{"firstname": "Shyam","lastname": "Sundar","gender": "Male","email": "shyam@xmpl.com","phone": "9731421234"}
+
+###
+
+DELETE /api/contacts/8a4e9d41-cf7a-4ace-82fe-ebaed8942cfb HTTP/1.1
+Host: vin-contact-service.herokuapp.com
+Accept: application/json
+
+###
+
+POST /api/contacts
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contact>
+    <firstname>John</firstname>
+    <lastname>Doe</lastname>
+    <gender>Male</gender>
+    <email>johndoe@xmpl.com</email>
+    <phone>9418962233</phone>
+    <address>453 Vidon Junction</address>
+    <city>North Port</city>
+    <state>Florida</state>
+    <country>United States</country>
+    <pincode>34290</pincode>
+</contact>
+
+###
+POST /api/contacts
+Content-Type: application/x-www-form-urlencoded
+Host: vin-contact-service.herokuapp.com
+
+firstname=Jane&lastname=Doe&gender=Female&email=janedoe@xmpl.com&phone=7383988223&country=United States
+
+###
+
+GET /api/contacts?city=Atlanta
+Accept: application/json
+Host: vin-contact-service.herokuapp.com
+
+###
+
+GET /api/contacts?state=Georgia
+Accept: application/json
+Host: vin-contact-service.herokuapp.com
+###
+
+GET /api/contacts?state=Karnataka
+Accept: application/json
+Host: vin-contact-service.herokuapp.com
+###
+
+GET /api/contacts?email=delvins6o@so-net.ne.jp
+Accept: application/json
+Host: vin-contact-service.herokuapp.com
+###
+
+GET /api/contacts?phone=6781345764
+Accept: application/json
+Host: vin-contact-service.herokuapp.com
+###
+
+PUT /api/contacts/4749d4fd-2e5f-4b7e-bd1e-bc5efcf5cf19
+Host: vin-contact-service.herokuapp.com
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstname": "Delmore",
+    "lastname": "Elvins",
+    "gender": "Male",
+    "email": "delvins6o@xmpl.com",
+    "phone": "9418962368",
+    "address": "453 Vidon Junction"
+}
+
+###
+PATCH /api/contacts/4749d4fd-2e5f-4b7e-bd1e-bc5efcf5cf19
+Host: vin-contact-service.herokuapp.com
+Accept: application/json
+Content-Type: application/json
+
+{"city":"Dallas","state":"Texas"}

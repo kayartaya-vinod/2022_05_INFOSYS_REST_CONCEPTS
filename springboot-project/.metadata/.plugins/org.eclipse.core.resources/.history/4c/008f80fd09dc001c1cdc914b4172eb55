@@ -1,0 +1,14 @@
+package co.vinod.controller;
+
+public class CustomerController {
+
+	public String info() {
+		return "This is a simple REST endpoint\n"
+				+ "exposing customer details at \n"
+				+ "http://localhost:1234/api/customers\n"
+				+ "\n"
+				+ "This current response came from \n"
+				+ "http://localhost:1234/api/customers/info";
+	}
+	
+}

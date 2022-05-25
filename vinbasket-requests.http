@@ -1,0 +1,12 @@
+GET /orders
+Host: vinbasket.herokuapp.com
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlZpbm9kIEt1bWFyIiwiaWF0IjoxNjUzNDc3MDc1fQ.iBSA9EA2NRtrNAauKCezgwAVS0CAQr5T4n0cj04tv7g
+
+#### 
+POST /login
+Host: vinbasket.herokuapp.com
+Accept: application/json
+Content-Type: application/json
+
+{"email": "vinod@vinod.co", "password": "topsecret"}

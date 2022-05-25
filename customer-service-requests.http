@@ -1,0 +1,53 @@
+GET /
+Host: localhost:1234
+
+###
+
+
+GET /api/customers/info
+Host: localhost:1234
+Accept: text/plain
+
+###
+
+
+GET /api/customers
+Host: localhost:1234
+Accept: application/xml
+
+###
+
+
+GET /api/customers
+Host: localhost:1234
+Accept: application/json
+
+###
+
+
+GET /api/customers/4749d4fd-2e5f-4b7e-bd1e-bc5efcf5c
+Host: localhost:1234
+
+###
+
+
+
+GET /api/customers/0d3c8259-0c90-4331-a049-a468a0b723d7
+Host: localhost:1234
+Accept: application/json
+
+###
+
+
+GET /api/customers/0d3c8259-0c90-4331-a049-a468a0b723d7
+Host: localhost:1234
+Accept: application/xml
+
+###
+
+
+
+POST /api/customers
+Host: localhost:1234
+
+###
