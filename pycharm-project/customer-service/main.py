@@ -14,8 +14,7 @@ customers = [
 
 @app.route('/api/customers', methods=['GET'])
 def all_customers():
-    return Response(json.dumps({'customers': customers}),
-                    mimetype='application/json')
+    return Response(json.dumps({'customers': customers}), mimetype='application/json')
 
 
 @app.route('/api/customers/info', methods=['GET'])
